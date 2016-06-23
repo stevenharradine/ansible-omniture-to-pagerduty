@@ -1,5 +1,8 @@
 ---
-dependencies: []
+dependencies:
+  - role: telusdigital.php
+    php_modules:
+      - php5-curl
 galaxy_info:
   author: "Steven Harradine"
   description: "Reads data from omniture and notifies pagerduty"

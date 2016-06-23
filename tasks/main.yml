@@ -1,0 +1,20 @@
+---
+- name: clone omniture-to-pagerduty | git
+  git:
+    repo: "https://github.com/stevenharradine/omniture-to-pagerduty.git"
+    dest: "{{ servicewatch_path }}"
+    update: yes
+    force: yes
+
+- name: copy configuration
+  template:
+    src: templates/config.php
+    dest: "{{ omniture_to_pagerduty_path }}/config.php"
+    mode: 0644
+
+# - name: set cron jobs
+#   cron:
+#     name: "cron for github mfa checker"
+#     user: "{{ servicewatch_user }}"
+#     special_time: daily
+#     job: "node {{ servicewatch_path }}/service-watch.js"

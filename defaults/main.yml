@@ -1,0 +1,7 @@
+---
+omniture_to_pagerduty_user: www-data
+omniture_to_pagerduty_install_directory: /data/www/
+omniture_to_pagerduty_install_name: omniture-to-pagerduty
+omniture_to_pagerduty_path: "{{ omniture_to_pagerduty_install_directory }}{{ omniture_to_pagerduty_install_name }}"
+omniture_to_pagerduty_omniture_username: "{{ project }}"
+omniture_to_pagerduty_omniture_reportSuiteID: rsid 

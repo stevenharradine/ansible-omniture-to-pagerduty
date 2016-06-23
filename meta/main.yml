@@ -1,0 +1,13 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Steven Harradine"
+  description: "Reads data from omniture and notifies pagerduty"
+  license: "ISC"
+  platforms:
+    - name: "Ubuntu"
+      versions:
+        - all
+  categories:
+    - "monitoring"
+    - "automation"

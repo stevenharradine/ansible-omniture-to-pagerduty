@@ -12,9 +12,9 @@
     dest: "{{ omniture_to_pagerduty_path }}/config.php"
     mode: 0644
 
-# - name: set cron jobs
-#   cron:
-#     name: "cron for github mfa checker"
-#     user: "{{ servicewatch_user }}"
-#     special_time: daily
-#     job: "node {{ omniture_to_pagerduty_path }}/service-watch.js"
+- name: set cron jobs
+  cron:
+    name: "cron for github mfa checker"
+    user: "{{ omniture_to_pagerduty_user }}"
+    minute: "*"
+    job: "php {{ omniture_to_pagerduty_path }}/connect.php"

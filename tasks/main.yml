@@ -17,4 +17,4 @@
     name: "cron for github mfa checker"
     user: "{{ omniture_to_pagerduty_user }}"
     minute: "*"
-    job: "php {{ omniture_to_pagerduty_path }}/connect.php"
+    job: "/usr/bin/php {{ omniture_to_pagerduty_path }}/connect.php"

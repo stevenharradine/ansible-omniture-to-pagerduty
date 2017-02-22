@@ -14,7 +14,7 @@
 
 - name: set cron jobs
   cron:
-    name: "cron for github mfa checker"
+    name: "cron for omniture to pagerduty"
     user: "{{ omniture_to_pagerduty_user }}"
     minute: "*"
     job: "/usr/bin/php {{ omniture_to_pagerduty_path }}/connect.php"
